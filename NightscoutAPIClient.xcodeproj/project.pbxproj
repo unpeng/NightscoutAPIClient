@@ -23,8 +23,6 @@
 		38D9A64E2413C0D30099AAF0 /* KalmanFilterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D9A64A2413C0D30099AAF0 /* KalmanFilterType.swift */; };
 		38D9A6502413C0D30099AAF0 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D9A64C2413C0D30099AAF0 /* DoubleExtension.swift */; };
 		38E30FC52358C25100DAB3A0 /* NightscoutAPIClientUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 38E30FB72358C25000DAB3A0 /* NightscoutAPIClientUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38F613A3234F3067003FB95D /* NightscoutAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F61399234F3066003FB95D /* NightscoutAPIClient.framework */; };
-		38F613A8234F3067003FB95D /* NightscoutAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F613A7234F3067003FB95D /* NightscoutAPIClientTests.swift */; };
 		38F613AA234F3067003FB95D /* NightscoutAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 38F6139C234F3066003FB95D /* NightscoutAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38F613B7234F333C003FB95D /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F613B6234F333C003FB95D /* LoopKit.framework */; platformFilter = ios; };
 		38F613B9234F33B1003FB95D /* NightscoutRemoteCGM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F613B8234F33B1003FB95D /* NightscoutRemoteCGM.swift */; };
@@ -41,17 +39,14 @@
 		A9BAC74626CDC3AA001C9493 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BAC74526CDC3AA001C9493 /* Bundle.swift */; };
 		A9BAC74926CDC3CD001C9493 /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BAC74726CDC3B3001C9493 /* OSLog.swift */; };
 		A9BAC74A26CDC565001C9493 /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BAC74726CDC3B3001C9493 /* OSLog.swift */; };
+		C19C8BF52865216A0056D5E4 /* NightscoutAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F61399234F3066003FB95D /* NightscoutAPIClient.framework */; platformFilter = ios; };
+		C19C8BF62865216A0056D5E4 /* NightscoutAPIClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38F61399234F3066003FB95D /* NightscoutAPIClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C19C8BF92865216A0056D5E4 /* NightscoutAPIClientUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E30FB52358C25000DAB3A0 /* NightscoutAPIClientUI.framework */; platformFilter = ios; };
+		C19C8BFA2865216A0056D5E4 /* NightscoutAPIClientUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38E30FB52358C25000DAB3A0 /* NightscoutAPIClientUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		38589859235E051F00919FD4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 38F61390234F3066003FB95D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 38F61398234F3066003FB95D;
-			remoteInfo = NightscoutAPIClient;
-		};
-		38F613A4234F3067003FB95D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 38F61390234F3066003FB95D /* Project object */;
 			proxyType = 1;
@@ -72,7 +67,36 @@
 			remoteGlobalIDString = 38E30FB42358C25000DAB3A0;
 			remoteInfo = NightscoutAPIClientUI;
 		};
+		C19C8BF72865216A0056D5E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38F61390234F3066003FB95D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38F61398234F3066003FB95D;
+			remoteInfo = NightscoutAPIClient;
+		};
+		C19C8BFB2865216A0056D5E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38F61390234F3066003FB95D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38E30FB42358C25000DAB3A0;
+			remoteInfo = NightscoutAPIClientUI;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C19C8BFD2865216A0056D5E4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C19C8BFA2865216A0056D5E4 /* NightscoutAPIClientUI.framework in Embed Frameworks */,
+				C19C8BF62865216A0056D5E4 /* NightscoutAPIClient.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		384D8F0A23608A4400B1DD29 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -97,9 +121,6 @@
 		38F61399234F3066003FB95D /* NightscoutAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NightscoutAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38F6139C234F3066003FB95D /* NightscoutAPIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NightscoutAPIClient.h; sourceTree = "<group>"; };
 		38F6139D234F3066003FB95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38F613A2234F3067003FB95D /* NightscoutAPIClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightscoutAPIClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		38F613A7234F3067003FB95D /* NightscoutAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightscoutAPIClientTests.swift; sourceTree = "<group>"; };
-		38F613A9234F3067003FB95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38F613B3234F313A003FB95D /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		38F613B6234F333C003FB95D /* LoopKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoopKit.framework; path = Carthage/Build/iOS/LoopKit.framework; sourceTree = "<group>"; };
 		38F613B8234F33B1003FB95D /* NightscoutRemoteCGM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightscoutRemoteCGM.swift; sourceTree = "<group>"; };
@@ -141,18 +162,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38F6139F234F3067003FB95D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				38F613A3234F3067003FB95D /* NightscoutAPIClient.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A9BAC72426CDB7A5001C9493 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C19C8BF92865216A0056D5E4 /* NightscoutAPIClientUI.framework in Frameworks */,
+				C19C8BF52865216A0056D5E4 /* NightscoutAPIClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +209,6 @@
 				38F613BC234F3E47003FB95D /* Common */,
 				38F6139B234F3066003FB95D /* NightscoutAPIClient */,
 				38E30FB62358C25000DAB3A0 /* NightscoutAPIClientUI */,
-				38F613A6234F3067003FB95D /* NightscoutAPIClientTests */,
 				A9BAC72826CDB7A5001C9493 /* NightscoutAPIClientPlugin */,
 				38F6139A234F3066003FB95D /* Products */,
 				38F613B5234F3315003FB95D /* Frameworks */,
@@ -205,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				38F61399234F3066003FB95D /* NightscoutAPIClient.framework */,
-				38F613A2234F3067003FB95D /* NightscoutAPIClientTests.xctest */,
 				38E30FB52358C25000DAB3A0 /* NightscoutAPIClientUI.framework */,
 				A9BAC72726CDB7A5001C9493 /* NightscoutAPIClientPlugin.loopplugin */,
 			);
@@ -223,15 +236,6 @@
 				38F613C1234F7FB9003FB95D /* NightscoutAPIClient.swift */,
 			);
 			path = NightscoutAPIClient;
-			sourceTree = "<group>";
-		};
-		38F613A6234F3067003FB95D /* NightscoutAPIClientTests */ = {
-			isa = PBXGroup;
-			children = (
-				38F613A7234F3067003FB95D /* NightscoutAPIClientTests.swift */,
-				38F613A9234F3067003FB95D /* Info.plist */,
-			);
-			path = NightscoutAPIClientTests;
 			sourceTree = "<group>";
 		};
 		38F613B5234F3315003FB95D /* Frameworks */ = {
@@ -348,24 +352,6 @@
 			productReference = 38F61399234F3066003FB95D /* NightscoutAPIClient.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		38F613A1234F3067003FB95D /* NightscoutAPIClientTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 38F613B0234F3067003FB95D /* Build configuration list for PBXNativeTarget "NightscoutAPIClientTests" */;
-			buildPhases = (
-				38F6139E234F3067003FB95D /* Sources */,
-				38F6139F234F3067003FB95D /* Frameworks */,
-				38F613A0234F3067003FB95D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				38F613A5234F3067003FB95D /* PBXTargetDependency */,
-			);
-			name = NightscoutAPIClientTests;
-			productName = NightscoutAPIClientTests;
-			productReference = 38F613A2234F3067003FB95D /* NightscoutAPIClientTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		A9BAC72626CDB7A5001C9493 /* NightscoutAPIClientPlugin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9BAC73826CDB7A5001C9493 /* Build configuration list for PBXNativeTarget "NightscoutAPIClientPlugin" */;
@@ -374,13 +360,15 @@
 				A9BAC72326CDB7A5001C9493 /* Sources */,
 				A9BAC72426CDB7A5001C9493 /* Frameworks */,
 				A9BAC72526CDB7A5001C9493 /* Resources */,
-				A901264D26D91B820081BAD1 /* Copy Frameworks with Carthage */,
+				C19C8BFD2865216A0056D5E4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				A9BAC73F26CDB821001C9493 /* PBXTargetDependency */,
 				A9BAC74126CDB821001C9493 /* PBXTargetDependency */,
+				C19C8BF82865216A0056D5E4 /* PBXTargetDependency */,
+				C19C8BFC2865216A0056D5E4 /* PBXTargetDependency */,
 			);
 			name = NightscoutAPIClientPlugin;
 			productName = NightscoutAPIClientPlugin;
@@ -404,9 +392,6 @@
 					38F61398234F3066003FB95D = {
 						CreatedOnToolsVersion = 11.1;
 						LastSwiftMigration = 1110;
-					};
-					38F613A1234F3067003FB95D = {
-						CreatedOnToolsVersion = 11.1;
 					};
 					A9BAC72626CDB7A5001C9493 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -432,7 +417,6 @@
 			targets = (
 				38F61398234F3066003FB95D /* NightscoutAPIClient */,
 				38E30FB42358C25000DAB3A0 /* NightscoutAPIClientUI */,
-				38F613A1234F3067003FB95D /* NightscoutAPIClientTests */,
 				A9BAC72626CDB7A5001C9493 /* NightscoutAPIClientPlugin */,
 			);
 		};
@@ -455,13 +439,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38F613A0234F3067003FB95D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A9BAC72526CDB7A5001C9493 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -470,30 +447,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A901264D26D91B820081BAD1 /* Copy Frameworks with Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/NightscoutAPIClient.framework",
-				"$(BUILT_PRODUCTS_DIR)/NightscoutAPIClientUI.framework",
-				"$(BUILT_PRODUCTS_DIR)/NightscoutUploadKit.framework",
-			);
-			name = "Copy Frameworks with Carthage";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Scripts/copy-frameworks.sh\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		38E30FB12358C25000DAB3A0 /* Sources */ = {
@@ -528,14 +481,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38F6139E234F3067003FB95D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				38F613A8234F3067003FB95D /* NightscoutAPIClientTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A9BAC72326CDB7A5001C9493 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -555,11 +500,6 @@
 			target = 38F61398234F3066003FB95D /* NightscoutAPIClient */;
 			targetProxy = 38589859235E051F00919FD4 /* PBXContainerItemProxy */;
 		};
-		38F613A5234F3067003FB95D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 38F61398234F3066003FB95D /* NightscoutAPIClient */;
-			targetProxy = 38F613A4234F3067003FB95D /* PBXContainerItemProxy */;
-		};
 		A9BAC73F26CDB821001C9493 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 38F61398234F3066003FB95D /* NightscoutAPIClient */;
@@ -569,6 +509,18 @@
 			isa = PBXTargetDependency;
 			target = 38E30FB42358C25000DAB3A0 /* NightscoutAPIClientUI */;
 			targetProxy = A9BAC74026CDB821001C9493 /* PBXContainerItemProxy */;
+		};
+		C19C8BF82865216A0056D5E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 38F61398234F3066003FB95D /* NightscoutAPIClient */;
+			targetProxy = C19C8BF72865216A0056D5E4 /* PBXContainerItemProxy */;
+		};
+		C19C8BFC2865216A0056D5E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 38E30FB42358C25000DAB3A0 /* NightscoutAPIClientUI */;
+			targetProxy = C19C8BFB2865216A0056D5E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -831,46 +783,6 @@
 			};
 			name = Release;
 		};
-		38F613B1234F3067003FB95D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = NightscoutAPIClientTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.artpancreas.NightscoutAPIClientTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		38F613B2234F3067003FB95D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = NightscoutAPIClientTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.artpancreas.NightscoutAPIClientTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		A9BAC73926CDB7A5001C9493 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -958,15 +870,6 @@
 			buildConfigurations = (
 				38F613AE234F3067003FB95D /* Debug */,
 				38F613AF234F3067003FB95D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		38F613B0234F3067003FB95D /* Build configuration list for PBXNativeTarget "NightscoutAPIClientTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				38F613B1234F3067003FB95D /* Debug */,
-				38F613B2234F3067003FB95D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
