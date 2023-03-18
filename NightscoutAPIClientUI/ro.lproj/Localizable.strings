@@ -31,3 +31,18 @@
 /* (No Comment) */
 "Service Description" = "Sursa Nightscout Remote CGM va folosi datele dvs. de CGM din Nightscout și le va face disponibile în Loop. Acest lucru este util dacă nu puteți adăuga dispozitivul dvs. CGM la Loop, dar datele dvs. CGM sunt disponibile pe Nightscout. \n\nNu este recomandat să utilizați acest lucru pentru terapie din cauza riscului de întrerupere al rețelei și a lipsei suportului de fundal al aplicației.";
 
+/* No comment provided by engineer. */
+"Status" = "Stare";
+
+/* (No Comment) */
+"Upload to remote service" = "Încărcați în serviciul de la distanță";
+
+/* The title of the Nightscout API server URL credential */
+"URL" = "URL";
+
+/* (No Comment) */
+"Use glucose filter" = "Utilizați filtrul de glucoză";
+
+/* (No Comment) */
+"Use Kalman filter to smooth out a sensor noise." = "Utilizați filtrul Kalman pentru a netezi zgomotul senzorului.";
+
