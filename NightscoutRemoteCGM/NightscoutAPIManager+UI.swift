@@ -1,6 +1,6 @@
 //
 //  NightscoutAPIManager+UI.swift
-//  NightscoutAPIClientUI
+//  NightscoutRemoteCGM
 //
 //  Created by Ivan Valkou on 21.10.2019.
 //  Copyright © 2019 Ivan Valkou. All rights reserved.
@@ -9,7 +9,6 @@
 import LoopKitUI
 import LoopKit
 import HealthKit
-import NightscoutAPIClient
 
 extension NightscoutRemoteCGM: CGMManagerUI {
     

@@ -15,37 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "38F61398234F3066003FB95D"
-               BuildableName = "NightscoutAPIClient.framework"
-               BlueprintName = "NightscoutAPIClient"
-               ReferencedContainer = "container:NightscoutAPIClient.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "38E30FB42358C25000DAB3A0"
-               BuildableName = "NightscoutAPIClientUI.framework"
-               BlueprintName = "NightscoutAPIClientUI"
-               ReferencedContainer = "container:NightscoutAPIClient.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "38F613A1234F3067003FB95D"
-               BuildableName = "NightscoutAPIClientTests.xctest"
-               BlueprintName = "NightscoutAPIClientTests"
-               ReferencedContainer = "container:NightscoutAPIClient.xcodeproj">
+               BuildableName = "NightscoutRemoteCGM.framework"
+               BlueprintName = "NightscoutRemoteCGM"
+               ReferencedContainer = "container:NightscoutRemoteCGM.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -79,9 +51,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "38F61398234F3066003FB95D"
-            BuildableName = "NightscoutAPIClient.framework"
-            BlueprintName = "NightscoutAPIClient"
-            ReferencedContainer = "container:NightscoutAPIClient.xcodeproj">
+            BuildableName = "NightscoutRemoteCGM.framework"
+            BlueprintName = "NightscoutRemoteCGM"
+            ReferencedContainer = "container:NightscoutRemoteCGM.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

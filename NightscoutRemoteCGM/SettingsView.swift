@@ -1,6 +1,6 @@
 //
 //  SettingsView.swift
-//  NightscoutAPIClientUI
+//  NightscoutRemoteCGM
 //
 //  Created by Ivan Valkou on 18.10.2019.
 //  Copyright © 2019 Ivan Valkou. All rights reserved.
@@ -8,7 +8,6 @@
 
 import SwiftUI
 import Combine
-import NightscoutAPIClient
 
 private let frameworkBundle = Bundle(for: SettingsViewModel.self)
 

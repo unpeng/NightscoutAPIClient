@@ -19,10 +19,10 @@
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>NSPrincipalClass</key>
-	<string>NightscoutAPIClientPlugin</string>
+	<string>NightscoutRemoteCGMPlugin</string>
 	<key>com.loopkit.Loop.CGMManagerDisplayName</key>
 	<string>Nightscout Remote CGM</string>
 	<key>com.loopkit.Loop.CGMManagerIdentifier</key>
-	<string>NightscoutAPIClient</string>
+	<string>NightscoutRemoteCGM</string>
 </dict>
 </plist>
