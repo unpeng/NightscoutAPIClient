@@ -11,17 +11,20 @@ import LoopKit
 import HealthKit
 
 extension NightscoutRemoteCGM: CGMManagerUI {
+
     
     // TODO Placeholder.
     public static var onboardingImage: UIImage? {
         return UIImage(named: "nightscout", in: Bundle(for: NightscoutAPISettingsViewController.self), compatibleWith: nil)!
     }
     
-    public static func setupViewController(bluetoothProvider: BluetoothProvider, displayGlucoseUnitObservable: DisplayGlucoseUnitObservable, colorPalette: LoopUIColorPalette, allowDebugFeatures: Bool) -> SetupUIResult<CGMManagerViewController, CGMManagerUI> {
+    public static func setupViewController(bluetoothProvider: LoopKit.BluetoothProvider, displayGlucoseUnitObservable: LoopKitUI.DisplayGlucoseUnitObservable, colorPalette: LoopKitUI.LoopUIColorPalette, allowDebugFeatures: Bool, prefersToSkipUserInteraction: Bool) -> LoopKitUI.SetupUIResult<LoopKitUI.CGMManagerViewController, LoopKitUI.CGMManagerUI>
+    {
         return .userInteractionRequired(NightscoutAPISetupViewController())
     }
     
-    public func settingsViewController(bluetoothProvider: BluetoothProvider, displayGlucoseUnitObservable: DisplayGlucoseUnitObservable, colorPalette: LoopUIColorPalette, allowDebugFeatures: Bool) -> CGMManagerViewController {
+    public func settingsViewController(bluetoothProvider: BluetoothProvider, displayGlucoseUnitObservable: DisplayGlucoseUnitObservable, colorPalette: LoopUIColorPalette, allowDebugFeatures: Bool) -> CGMManagerViewController
+    {
         let settings = NightscoutAPISettingsViewController(cgmManager: self, glucoseUnit: displayGlucoseUnitObservable)
         let nav = CGMManagerSettingsNavigationViewController(rootViewController: settings)
         return nav
