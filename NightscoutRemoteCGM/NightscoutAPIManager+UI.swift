@@ -18,14 +18,14 @@ extension NightscoutRemoteCGM: CGMManagerUI {
         return UIImage(named: "nightscout", in: Bundle(for: NightscoutAPISettingsViewController.self), compatibleWith: nil)!
     }
     
-    public static func setupViewController(bluetoothProvider: LoopKit.BluetoothProvider, displayGlucoseUnitObservable: LoopKitUI.DisplayGlucoseUnitObservable, colorPalette: LoopKitUI.LoopUIColorPalette, allowDebugFeatures: Bool, prefersToSkipUserInteraction: Bool) -> LoopKitUI.SetupUIResult<LoopKitUI.CGMManagerViewController, LoopKitUI.CGMManagerUI>
+    public static func setupViewController(bluetoothProvider: LoopKit.BluetoothProvider, displayGlucosePreference: DisplayGlucosePreference, colorPalette: LoopKitUI.LoopUIColorPalette, allowDebugFeatures: Bool, prefersToSkipUserInteraction: Bool) -> LoopKitUI.SetupUIResult<LoopKitUI.CGMManagerViewController, LoopKitUI.CGMManagerUI>
     {
         return .userInteractionRequired(NightscoutAPISetupViewController())
     }
     
-    public func settingsViewController(bluetoothProvider: BluetoothProvider, displayGlucoseUnitObservable: DisplayGlucoseUnitObservable, colorPalette: LoopUIColorPalette, allowDebugFeatures: Bool) -> CGMManagerViewController
+    public func settingsViewController(bluetoothProvider: BluetoothProvider, displayGlucosePreference: DisplayGlucosePreference, colorPalette: LoopUIColorPalette, allowDebugFeatures: Bool) -> CGMManagerViewController
     {
-        let settings = NightscoutAPISettingsViewController(cgmManager: self, glucoseUnit: displayGlucoseUnitObservable)
+        let settings = NightscoutAPISettingsViewController(cgmManager: self, displayGlucosePreference: displayGlucosePreference)
         let nav = CGMManagerSettingsNavigationViewController(rootViewController: settings)
         return nav
     }
