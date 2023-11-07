@@ -999,7 +999,7 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		C1CEBFF529BCC2C8007FD8A3 /* XCRemoteSwiftPackageReference "NightscoutKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/LoopKit/NightscoutKit";
+			repositoryURL = "https://github.com/unpeng/NightscoutKit";
 			requirement = {
 				branch = main;
 				kind = branch;
